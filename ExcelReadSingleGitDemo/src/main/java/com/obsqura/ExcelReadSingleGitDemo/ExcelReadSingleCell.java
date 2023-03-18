@@ -17,6 +17,7 @@ public class ExcelReadSingleCell {
 		
 		File newfile=new File("C:\\Users\\ASUS\\Desktop\\Java Notes\\testdata.xlsx");  //(filepath:\\)
 		FileInputStream file=new FileInputStream(newfile);
+		@SuppressWarnings("resource")
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		sheet=workbook.getSheet("Sheet1");
 	}
